@@ -47,3 +47,12 @@ class Post(models.Model):
     def __str__(self):
         truncated_message = Truncator(self.message)
         return truncated_message.chars(30)
+
+
+
+
+class F1models(models.Model):
+    "this is F1 branch"
+
+    class Meta:
+        abstract = True
